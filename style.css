@@ -82,6 +82,7 @@ span.price {
 span.strike {
   font-size: 0.75rem;
   margin-left: 20px;
+  text-decoration: line-through;
 }
 
 button {
