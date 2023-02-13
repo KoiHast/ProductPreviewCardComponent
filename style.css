@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  max-width: 532px;
+  height: 400px;
+}
+
+img {
+  max-height: 400px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+div.textContainer {
+  background-color: hsl(0, 0%, 100%);
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: 10px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  justify-content: space-between;
+}
+
+div.pricing {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+h1,
+.price {
+  font-family: "Fraunces", serif;
+  color: rgb(37, 37, 37);
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+}
+
+span.perfume,
+div > p,
+span.strike,
+button,
+footer {
+  font-family: "Montserrat", sans-serif;
+  color: grey;
+}
+
+div > p {
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+}
+
+span.perfume {
+  font-size: 0.75rem;
+  margin: 20px 0px 0px 0px;
+}
+
+span.price {
+  color: hsl(158, 36%, 37%);
+}
+
+span.strike {
+  font-size: 0.75rem;
+  margin-left: 20px;
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  padding: 15px 50px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: hsl(157, 36%, 23%);
+}
+
+img.cart {
+  padding-right: 10px;
+}
+/* footer */
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+footer a {
+  color: hsl(158, 36%, 37%);
+  font-weight: bold;
+}
+
+@media (max-width: 605px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    flex-direction: column;
+    max-width: 350px;
+    height: auto;
+  }
+
+  footer {
+    display: none;
+  }
+
+  picture > img {
+    max-width: 350px;
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+
+  div.textContainer {
+    height: 350px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  div > p {
+    font-size: 0.86rem;
+  }
+
+  button {
+    justify-content: center;
+    align-items: center;
+  }
+}
