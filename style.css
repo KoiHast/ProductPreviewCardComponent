@@ -73,6 +73,8 @@ div > p {
 span.perfume {
   font-size: 0.75rem;
   margin: 20px 0px 0px 0px;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
 }
 
 span.price {
